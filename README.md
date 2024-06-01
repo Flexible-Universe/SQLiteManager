@@ -10,8 +10,11 @@ The SQLiteManager is a framework that manage sqlite databases. It works with the
 - [License](#license)
 
 ## Features
-- Create colors using HTML Hex values
-- Simplify date formatting
+- Connect to SQLite Database
+- Execute sql commands (SELECT, INSERT, UPDATE, DELETE, TRUNCATE)
+- Work with the Apple Combine Framework
+- Optional logging of the errors from the communication with the database
+- Check if a table with a entry is exists in primary key column or custom column
 
 ## Requirements
 The following table outlines the requirements for this package:

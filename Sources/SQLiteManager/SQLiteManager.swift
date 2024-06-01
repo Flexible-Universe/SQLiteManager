@@ -18,9 +18,9 @@ public enum SQLiteManagerError: Error {
 /// The main class of the SQLite Manager
 public final class SQLiteManager {
     
-    private var db: OpaquePointer?
-    private let log = OSLog(subsystem: "com.flexibleuniverse.SQLiteManager", category: "SQLiteManager")
-    private let isLoggingEnabled: Bool
+    internal var db: OpaquePointer?
+    internal let log = OSLog(subsystem: "com.flexibleuniverse.SQLiteManager", category: "SQLiteManager")
+    internal let isLoggingEnabled: Bool
 
     /// To initialize the SQLite Manager
     ///  - Parameter path: A String with a path to the database
@@ -132,7 +132,7 @@ public final class SQLiteManager {
     }
     /// To write the logging error message with os.log
     /// - Parameter message: The error message as a string
-    private func logError(_ message: String) {
+    internal func logError(_ message: String) {
         if isLoggingEnabled {
             os_log("Error: %@", log: log, type: .error, message)
         }
