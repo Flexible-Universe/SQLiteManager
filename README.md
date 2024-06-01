@@ -1,3 +1,7 @@
+<div style="text-align: center;">
+  <img src="assets/sqlite_manager.png" alt="SQLite Manager"/>
+</div>
+
 # SQLiteManager
 
 The SQLiteManager is a framework that manage sqlite databases. It works with the Apple Framework Combine to publish the data from the database into the app. For example you create your base sqlite database and put it into the bundle of your swift app. Then you can copy as the sqlite database into a working folder to store data into it or read data. You can also create the sqlite database at runtime and save it to a custom folder.
